@@ -3,17 +3,17 @@
 // Definitions & Includes
 //
 
-#include <iostream>									// Andy Lemmon, Omoju Miller, Joseph Qualls
-#include <iomanip>									// EECE 6278 Final Project
-#include <fstream>									// 4/25/06
+#include <iostream>						// Andy Lemmon, Omoju Miller, Joseph Qualls
+#include <iomanip>									
+#include <fstream>					
 #include <sstream>
 #include <vector>
 #include <time.h>
 using namespace std;
 
 #define ERROR				-1
-#define OPCODE(x) 			((x >> 12) & 0x07)		// Decode OpCode from int
-#define OPER(x) 			(x & 0xFFF)				// Decode Operand from int
+#define OPCODE(x) 		((x >> 12) & 0x07)		// Decode OpCode from int
+#define OPER(x) 		(x & 0xFFF)				// Decode Operand from int
 #define INSTRUCTION(x, y)	((x << 12) + y)			// Build an int x=OC y=OP
 #define MAIN_MEM_SIZE		512
 #define VIRT_MEM_SIZE		4096
